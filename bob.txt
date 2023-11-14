@@ -1,0 +1,18 @@
+【BTC】
+Private key: cU9GryQaTNxQWEH6rQf9pMhMqXnhPUfaK1hkuJXmNUTjxdzffxdC
+Address: mg2KExHr8HFWMG4UEPcjZT24BwctKDMTZQ
+tx: 95f11a4552866eac8e0693173fb4580d9dd522a243019152e71202ecb4c6492d
+
+【BCY】
+Token 639f71c280734c129c37d8200ac3cff0
+{
+  "private": "fc11c46fb5ff17f0209f353b37edb2abdf93140e3bfaba19b94b5d86e363239b",
+  "public": "02ff860e9f4562a102380e3dffc94fa72e803d2be40f0b63838f32eeaaeb762344",
+  "address": "C68fN6Wfz22SbvSmjKeBZjT1VB16S5WWnc",
+  "wif": "Bwn2A5cEo1z5G5S9rVZ7ovkvKRMM9zTD3oWyNZqJCYXudFropmk5"
+}
+
+curl -d '{"address": "C68fN6Wfz22SbvSmjKeBZjT1VB16S5WWnc", "amount": 1000000}' https://api.blockcypher.com/v1/bcy/test/faucet?token=639f71c280734c129c37d8200ac3cff0
+{
+  "tx_ref": "3890c0105b2d124bdfebabdcb1ce5d476b09a69a14a426dab6767ff3c4d24747"
+}
