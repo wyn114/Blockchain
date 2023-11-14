@@ -2,6 +2,7 @@ from bitcoin import SelectParams
 from bitcoin.core import CMutableTransaction, x
 from bitcoin.core.script import CScript, SignatureHash, SIGHASH_ALL
 from bitcoin.core.scripteval import VerifyScript, SCRIPT_VERIFY_P2SH
+from bitcoin.core import x
 
 from bitcoin.wallet import CBitcoinSecret, P2PKHBitcoinAddress
 
@@ -32,7 +33,8 @@ if __name__ == '__main__':
     # TODO: set these parameters correctly
     #
 
-    my_private_key = CBitcoinSecret('fc11c46fb5ff17f0209f353b37edb2abdf93140e3bfaba19b94b5d86e363239b')
+    # my_private_key = CBitcoinSecret('Bwn2A5cEo1z5G5S9rVZ7ovkvKRMM9zTD3oWyNZqJCYXudFropmk5')
+    my_private_key = CBitcoinSecret.from_secret_bytes(x('fc11c46fb5ff17f0209f353b37edb2abdf93140e3bfaba19b94b5d86e363239b'))
 
     my_public_key = my_private_key.pub
     my_address = P2PKHBitcoinAddress.from_pubkey(my_public_key)
