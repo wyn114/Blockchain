@@ -1,0 +1,187 @@
+Alice swap tx (BTC) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "2e55dafad8aa343a9252e4018cc53646c5f61f1792c61f61d27c85e0a8db95a8",
+    "addresses": [
+      "mpjezb6GZtmMVc5hranSmbdRqgmCMz9puP"
+    ],
+    "total": 40000,
+    "fees": 60000,
+    "size": 266,
+    "vsize": 266,
+    "preference": "high",
+    "relayed_by": "60.29.153.58",
+    "received": "2023-11-18T11:42:30.759226401Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "db9cfde7518ea2a63194bc21ecad1434fcc6e6a065d649dd03a534b97d361a21",
+        "output_index": 6,
+        "script": "483045022100aee2fada0bf662963db6178b4a13596871871aa636f3e8c64c94e56a1bcc0e1e02205ad2805436ac319a6d26236bc3544b27b0cafef10bf71bea404a9288355c4df9012102ac9374de0daf8ebb9b3fd6fc0660d62efd82aee4fd56fd922f972ac7361c208d",
+        "output_value": 100000,
+        "sequence": 4294967295,
+        "addresses": [
+          "mpjezb6GZtmMVc5hranSmbdRqgmCMz9puP"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 2536321
+      }
+    ],
+    "outputs": [
+      {
+        "value": 40000,
+        "script": "2103420f8b23bcf2cbe160231e0fc390262fe070284f8057f01eff5110fee192c47fad762102ac9374de0daf8ebb9b3fd6fc0660d62efd82aee4fd56fd922f972ac7361c208dac63755167a914853b775079232503df966e626618e1d388a957208768",
+        "addresses": null,
+        "script_type": "unknown"
+      }
+    ]
+  }
+}
+Bob swap tx (BCY) created successfully!
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "1e55f575fe22b734c4acd7b8457e095835ed8c0d43ef4c13e396b70e7ebf4111",
+    "addresses": [
+      "C68fN6Wfz22SbvSmjKeBZjT1VB16S5WWnc"
+    ],
+    "total": 80000,
+    "fees": 10000,
+    "size": 265,
+    "vsize": 265,
+    "preference": "low",
+    "relayed_by": "117.131.219.59",
+    "received": "2023-11-18T11:42:33.154249099Z",
+    "ver": 1,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "555b7813a921c9f1fefc6ea2f8509a757803da92a07662a9a4013b782c3527af",
+        "output_index": 6,
+        "script": "47304402201e00c38b54d544696926f46b4d95d2eac1eef60b6004d325011e9317e54fc1c5022021ded6913228856cd946ac6815b614e498962148b3b255f7c52910e5e988b823012102ff860e9f4562a102380e3dffc94fa72e803d2be40f0b63838f32eeaaeb762344",
+        "output_value": 90000,
+        "sequence": 4294967295,
+        "addresses": [
+          "C68fN6Wfz22SbvSmjKeBZjT1VB16S5WWnc"
+        ],
+        "script_type": "pay-to-pubkey-hash",
+        "age": 1067619
+      }
+    ],
+    "outputs": [
+      {
+        "value": 80000,
+        "script": "2102ac9ba41083d9a198abd4347f5d625b8b224d6558122806d79afe94e1c2223b33ad762102ff860e9f4562a102380e3dffc94fa72e803d2be40f0b63838f32eeaaeb762344ac63755167a914853b775079232503df966e626618e1d388a957208768",
+        "addresses": null,
+        "script_type": "unknown"
+      }
+    ]
+  }
+}
+休眠20分钟以等待交易确认...
+Bob return coins (BCY) tx created successfully!
+Alice return coins tx (BTC) created successfully!
+休眠bob_locktime区块以等待锁定时间...
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "d08ff4bbaf191f62531774b6d9dbb380fc31e0013848608ad4959338cfa0cd19",
+    "addresses": [
+      "C68fN6Wfz22SbvSmjKeBZjT1VB16S5WWnc"
+    ],
+    "total": 70000,
+    "fees": 10000,
+    "size": 231,
+    "vsize": 231,
+    "preference": "low",
+    "relayed_by": "60.29.153.58",
+    "received": "2023-11-18T12:32:37.743759827Z",
+    "ver": 1,
+    "lock_time": 1067622,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "1e55f575fe22b734c4acd7b8457e095835ed8c0d43ef4c13e396b70e7ebf4111",
+        "output_index": 0,
+        "script": "483045022100d79b6d5bdfe54bd9adfc1bff179e78db20c8910e0472a1e87fd9d49172be5252022039da4410654c7076cc357beb35a583e2583376987e26f3c436429f4ab99d0fb101483045022100945d457b14f9cf6cb370d57d4f52c1815bf08ae315b5f0f2002b02577fd3deeb022045968637a3e2736a6d1f2adfb752645144e8773490fdbc17ed496bdb190db09101",
+        "output_value": 80000,
+        "sequence": 4294967295,
+        "script_type": "unknown",
+        "age": 1073520
+      }
+    ],
+    "outputs": [
+      {
+        "value": 70000,
+        "script": "76a9148eabd0ab292d506dbfa3d0eb797d295959fcb2b188ac",
+        "addresses": [
+          "C68fN6Wfz22SbvSmjKeBZjT1VB16S5WWnc"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  }
+}
+休眠alice_locktime区块以等待锁定时间...
+201 Created
+{
+  "tx": {
+    "block_height": -1,
+    "block_index": -1,
+    "hash": "1d994cbb95486cd69c7418417068414e187003f369dbef874850212e3d4c0c36",
+    "addresses": [
+      "mpjezb6GZtmMVc5hranSmbdRqgmCMz9puP"
+    ],
+    "total": 30000,
+    "fees": 10000,
+    "size": 229,
+    "vsize": 229,
+    "preference": "low",
+    "relayed_by": "117.131.219.59",
+    "received": "2023-11-18T12:52:39.177661712Z",
+    "ver": 1,
+    "lock_time": 2536326,
+    "double_spend": false,
+    "vin_sz": 1,
+    "vout_sz": 1,
+    "confirmations": 0,
+    "inputs": [
+      {
+        "prev_hash": "2e55dafad8aa343a9252e4018cc53646c5f61f1792c61f61d27c85e0a8db95a8",
+        "output_index": 0,
+        "script": "47304402200dafd1d0b8f5efce05010704267d3fbf7bdf5e637a0da3a5e51d34829a44c68a02201d86a84483ed5d1a68de4dee6b7e99f97d2eadd86ca3d0158d5ec53591af506501473044022039676c7c6c265663f7fe22c55dd21e686c02e4d59eaa47c640ee3dd0440184d602205edace4490dbc2b634db8a449f7dc93165af5342d1c7ddbf537fcdb94d1e863401",
+        "output_value": 40000,
+        "sequence": 4294967295,
+        "script_type": "unknown",
+        "age": 2539076
+      }
+    ],
+    "outputs": [
+      {
+        "value": 30000,
+        "script": "76a914652018e8d62faf6e570c6a13a80c37df58698fd188ac",
+        "addresses": [
+          "mpjezb6GZtmMVc5hranSmbdRqgmCMz9puP"
+        ],
+        "script_type": "pay-to-pubkey-hash"
+      }
+    ]
+  }
+}
