@@ -2,7 +2,6 @@ from bitcoin import SelectParams
 from bitcoin.core import CMutableTransaction, x
 from bitcoin.core.script import CScript, SignatureHash, SIGHASH_ALL
 from bitcoin.core.scripteval import VerifyScript, SCRIPT_VERIFY_P2SH
-from bitcoin.core import x
 
 from bitcoin.wallet import CBitcoinSecret, P2PKHBitcoinAddress
 
@@ -33,19 +32,17 @@ if __name__ == '__main__':
     # TODO: set these parameters correctly
     #
 
-    # my_private_key = CBitcoinSecret('Bwn2A5cEo1z5G5S9rVZ7ovkvKRMM9zTD3oWyNZqJCYXudFropmk5')
-    my_private_key = CBitcoinSecret.from_secret_bytes(x('fc11c46fb5ff17f0209f353b37edb2abdf93140e3bfaba19b94b5d86e363239b'))
+    my_private_key = CBitcoinSecret('cSxgWbnZfP45no9MWbgVgdQd2P9N5HMBrYWaTBFXKoJYwcDtwRzp')
 
     my_public_key = my_private_key.pub
     my_address = P2PKHBitcoinAddress.from_pubkey(my_public_key)
 
-    amount_to_send = 0.01-0.001 # amount of BTC in the output you're splitting minus fee
+    amount_to_send = 0.01 # amount of BTC in the output you're splitting minus fee
     txid_to_spend = (
-        '873aeb81b01b9840da2a0933d0396f2f88bfd2741addc9442c773ce661a6a9a9')
+        'abc7a57d802a169246428f3344d750e0a9f0fb8391a669c97e732f618c37ca55')
     utxo_index = 0
     n = 10 # number of outputs to split the input into
-    # network = 'btc-test3' # either 'btc-test3' or 'bcy-test'
-    network = 'bcy-test'
+    network = 'btc-test3' # either 'btc-test3' or 'bcy-test'
 
     #
     #

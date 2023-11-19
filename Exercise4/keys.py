@@ -14,7 +14,7 @@ SelectParams('testnet')
 # Only to be imported by alice.py
 # Alice should have coins!!
 alice_secret_key_BTC = CBitcoinSecret(
-    'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    'cSxgWbnZfP45no9MWbgVgdQd2P9N5HMBrYWaTBFXKoJYwcDtwRzp')
 
 # Only to be imported by bob.py
 bob_secret_key_BTC = CBitcoinSecret(
@@ -27,12 +27,12 @@ bob_secret_key_BTC = CBitcoinSecret(
 # Create address in hex with
 # curl -X POST https://api.blockcypher.com/v1/bcy/test/addrs?token=$YOURTOKEN
 #
-# Send coins with 
+# Send coins with
 # curl -d '{"address": "BCY_ADDRESS", "amount": 1000000}' https://api.blockcypher.com/v1/bcy/test/faucet?token=<YOURTOKEN>
 
 # Only to be imported by alice.py
 alice_secret_key_BCY = CBitcoinSecret.from_secret_bytes(
-    x('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'))
+    x('4ad708479216e51c6e26a665873945f3568d4955ce7eb1375e26a001d4e9120e'))
 
 # Only to be imported by bob.py
 # Bob should have coins!!
